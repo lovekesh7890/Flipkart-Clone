@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart clone</title>
+    <link rel="stylesheet" href="flipkart_clone.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+
+
+    
+</head>
+<body>
+    <div class="nav">
+    <div class="logo">
+        <img src="Flipkart-Logo.png">
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Search Product and brands">
+        <a href="#"><i><box-icon name='search' color='#1a12de' ></box-icon></i></a>
+
+        
+        
+    </div>
+    <button><a href="#">Login</a></button>
+    <h1><a href="#">More</a></h1>
+    <div class="cart">
+    <a href="#"><box-icon name='cart' type='solid' animation='tada' color='rgba(2,1,1,0.93)' ></box-icon></a>
+</div>
+</div>
+<div id="cart">
+    <button><a href="#">Cart</a></button>
+</div>
+<div class="symbols">
+<b> <a href="#">Top offer</a>
+    <a href="#">fashion</a>
+    <a href="#">Electronisc</a>
+    <a href="#">Home</a>
+    <a href="#">Appliances</a>
+    <a href="#">Travel</a>
+    <a href="#">Beauty,Toys & More</a></b>
+    
+
+    <div class="container">
+<!-- Slider main container -->
+<div class="swiper">
+  
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="apple.jpg"></div>
+    <div class="swiper-slide"><img src="vivo-V27-Series-large.webp"></div>
+    <div class="swiper-slide"><img src="titan.png"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+const swiper = new Swiper('.swiper', {
+  autoplay:{
+    delay:2000,
+    disableOnInteraction:false,
+  },
+  
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+    </script>
+  </head>
+
+    <div class="product"><a href="#"><img src="A.avif"></a>
+      <div id="price"><a href="#">Smartwatch <br><span>From 1,099</span></a>
+      </div>
+  </div>
+   
+      
+    </div>
+  
+    <div class="product1"><a href="#"><img src="camera.jpg"></a></div>
+    <div id="camera"><a href="#">Top Mirrorless Camera <br> <span>Shop Now</span></a></div>
+    <div class="product2"> <a href="#"><img src="31wsNTDExQL.jpg"></a></div>
+    <div id="bud">
+      <a href="#">Best Truewireless Headphones <br><span>Grab Now</span></a>
+    </div>
+    <div class="product3"> <a href="#"><img src="sonny.jpg"></a></div>
+    <div id="sony">
+      <a href="#">Best Selling Mobile Speakers <br><span>From 4,000</span></a>
+    </div>
+
+    
+  
+</body>
+</html>
